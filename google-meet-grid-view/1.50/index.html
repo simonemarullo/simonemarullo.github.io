@@ -136,7 +136,16 @@
                 transform: translateY(-7px);
             }
         }
+
+        .initially-hidden {
+            display: none;
+        }
     </style>
+    <script>
+        var adTypes = ['version1', 'version2'];
+        var adType = adTypes[Math.floor(Math.random() * adTypes.length)];
+        console.log('AdType is ' + adType);
+    </script>
 </head>
 <body>
 
@@ -145,37 +154,84 @@
         <div class="card-content">
             <div class="row valign-wrapper valign-only-above-medium">
                 <div class="col s12 m12">
-                    <div class="card-title" style="clear: both; margin: -1em 0 0 0"><h4>Thanks for using Google Meet Grid View! 😎</h4></div>
+                    <div class="card-title" style="clear: both; margin: -1em 0 0 0"><h4>Thanks for using Google Meet
+                        Grid View! 😎</h4></div>
                 </div>
             </div>
-            <div class="row valign-wrapper valign-only-above-medium">
-				<div class="col s12 m12 l6 xl2">
+            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
+                <div class="col s12 m12 l6 xl2">
                     <div class="valign-wrapper center">
                         <img class="" src="assets/simone-marullo-256.jpg" style="width:100%">
                     </div>
                 </div>
-                <div class="col s12 m12 l6 xl10">
+                <div style="display: none" class="col s12 m12 l6 xl10 version1">
                     <p>
-						Hi there, this is Simone! Remember when this Chrome extension was needed to see all the participants in the grid? Our Google Meet calls were much more handy with this little extension... schools, companies and communities used it enthusiastically. 😊
-						<br /><br />
-						But things have changed a lot! Google improved Meet and we’ve had some issues along the way... Spoiler alert. I'm currently working on some improvements so stay tuned!
+                        Hi there, this is Simone! Remember when this Chrome extension was needed to see all the
+                        participants in the grid? Our Google Meet calls were much more handy with this little
+                        extension... schools, companies and communities used it enthusiastically. 😊
+                    </p>
+                    <p>
+                        But things have changed a lot! Google improved Meet and we’ve had some issues along the way...
+                        Spoiler alert. I'm currently working on some improvements so stay tuned!
                     </p>
                 </div>
-                
-            </div>
-            
-            <div class="row valign-wrapper valign-only-above-medium">
-                <div class="col s12 m12 l6 xl8">
+                <div style="display: none" class="col s12 m12 l6 xl10 version2">
                     <p>
-Today I want to tell you about another story that I bet you’ll find exciting. How many times have you OBSESSIVELY <b>checked your mute status</b>? Or worse... you found the mute button <i>too late</i>? 😨 
-That’s why I am working on this amazing project with some friends at mütesync. They built a physical, light up mute button and starting today, this extension is fully compatible with it. They designed a new mute button and they are launching on Kickstarter very soon. Make sure you visit their website to learn more about their physical mute button.
-						<br /><br />
-						Make sure to get informed when we’ll go live with the <b style='color:#06c;font-size:130%'>MOST BRILLIANT ADDON</b> for your Meet life!
-
+                        Hi there, I’m Simone! Thanks to all the schools, companies, and communities that have used this
+                        Google Meet Chrome Extension over the past year. 😊
                     </p>
+                    <p>
+                        Google keeps adding new features to Meet and I'm currently working on some improvements to make
+                        this
+                        extension even more useful! But today I want to tell you about another story that I bet you’ll
+                        find
+                        exciting.
+                    </p>
+                </div>
+            </div>
 
-                    <a href="https://mutesync.com/kickstarter-gmgv" target="_blank"
-                       class="waves-effect waves-light btn-large">Learn More <i
+            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
+                <div class="col s12 m12 l6 xl8">
+                    <div style="display: none" class="version1">
+                        <p>
+                            Today I want to tell you about another story that I bet you’ll find exciting. How many times
+                            have you OBSESSIVELY <b>checked your mute status</b>? Or worse... you found the mute button
+                            <i>too
+                                late</i>? 😨
+                            That’s why I am working on this amazing project with some friends at mütesync. They built a
+                            physical, light up mute button and starting today, this extension is fully compatible with
+                            it.
+                            They designed a new mute button and they are launching on Kickstarter very soon. Make sure
+                            you
+                            visit their website to learn more about their physical mute button.
+                        </p>
+                        <p>
+                            Make sure to get informed when we’ll go live with the <b style='color:#06c;font-size:130%'>MOST
+                            BRILLIANT ADDON</b> for your Meet life!
+
+                        </p>
+                    </div>
+
+                    <div style="display: none" class="version2">
+                        <p>
+                            How many times have you OBSESSIVELY checked your mute status? Or worse... you found the mute
+                            button
+                            too late? That’s why I am working on this amazing project with some friends at mütesync.
+                        </p>
+                        <p>
+                            They built a physical, light up mute button that works with Meet, Zoom, Discord, and more.
+                            Starting
+                            today, this extension is fully compatible with their physical mute button. To learn more
+                            about
+                            our
+                            integration check out their website and check out their Kickstarter tp see their new mute
+                            button
+                            launching this summer
+                        </p>
+                    </div>
+
+                    <a id="call-to-action" href="https://mutesync.com/kickstarter-gmgv" target="_blank"
+                       class="waves-effect waves-light btn-large call-to-action">Learn More <i
                             class="material-icons right yellow-font">send</i></a>
                 </div>
                 <div class="col s12 m12 l6 xl4">
@@ -186,7 +242,7 @@ That’s why I am working on this amazing project with some friends at mütesync
                     </div>
                 </div>
             </div>
-            <div class="row valign-wrapper valign-only-above-medium">
+            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
                 <div class="col s12 m12 l6 xl6">
                     <br class="hide-on-med-and-down"/>
                     <img class="z-depth-2 has-radius" width="100%" src="assets/button_press.gif">
@@ -196,9 +252,10 @@ That’s why I am working on this amazing project with some friends at mütesync
                     <img class="z-depth-2 has-radius" width="100%" src="assets/zoom_demo.gif">
                 </div>
             </div>
-            <div class="row valign-wrapper valign-only-above-medium">
+            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
                 <div class="col s12 m12 l6 xl6 show-on-large hide-on-med-only">
-                    <p style="margin: 0px; margin-top: 17px;"> 🎛️ stays in sync with Google Meet, Zoom, Discord and more</p>
+                    <p style="margin: 0px; margin-top: 17px;"> 🎛️ stays in sync with Google Meet, Zoom, Discord and
+                        more</p>
                     <p style="margin: 0px; margin-top: 17px;"> 🌈 set it to any color you like</p>
                     <p style="margin: 0px; margin-top: 17px;"> 😑 makes a great passive aggressive gift</p>
                     <p style="margin: 0px; margin-top: 17px;"> 🖥️ mac or PC</p>
@@ -230,6 +287,27 @@ That’s why I am working on this amazing project with some friends at mütesync
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    var applyFn = function (cls, f) {
+        Array.from(document.getElementsByClassName(cls)).forEach(f);
+    }
+    if ('version1' === adType) {
+        applyFn('version1', function (item) {
+            item.style.display = "block";
+        });
+    } else {
+        applyFn('version2', function (item) {
+            item.style.display = "block";
+        });
+    }
+
+    Array.from(document.getElementsByClassName("initially-hidden")).forEach(function (item) {
+        item.style.display = "block";
+    });
+
+    cta = document.getElementById("call-to-action");
+    cta.href = cta.href + '?type=' + adType;
+</script>
 </body>
 </html>
 
