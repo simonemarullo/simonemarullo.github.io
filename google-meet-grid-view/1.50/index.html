@@ -17,11 +17,15 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWC8Y1VT7X"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-NWC8Y1VT7X');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-NWC8Y1VT7X');
     </script>
     <style type="text/css">
         body {
@@ -88,11 +92,11 @@
         }
 
         nav {
-            background-color: #efefef;
+            background-color: #fff;
         }
 
         nav .brand-logo {
-            color: #5571dc;
+            color: #007C12;
             font-size: 1.5rem;
             width: 100%;
         }
@@ -121,10 +125,9 @@
                 margin-bottom: 20px;
             }
         }
-        
+
         .card {
-			border: 2px solid #06c;
-		}
+        }
 
         @media only screen and (max-width: 600px) {
             .card .card-content {
@@ -153,110 +156,142 @@
         .initially-hidden {
             display: none;
         }
-        .emoji{font-size:x-large}
-        #call-to-action{width: 44%;margin-bottom:11px}
+
+        .emoji {
+            font-size: x-large
+        }
+
+        #call-to-action {
+            width: 44%;
+            margin-bottom: 11px
+        }
     </style>
     <script>
-        var adTypes = ['version1', 'version2'];
+        var adTypes = ['version3', 'version4'];
         var adType = adTypes[Math.floor(Math.random() * adTypes.length)];
         console.log('AdType is ' + adType);
     </script>
 </head>
 <body>
 
+<nav>
+    <div class="nav-wrapper">
+        <a href="https://chrome.google.com/webstore/detail/google-meet-grid-view-fix/dakebdbeofhmlnmjlmhjdmmjmfohiicn?hl=en"
+           class="brand-logo center">
+            <div class="valign-wrapper center"><img src="assets/logo.png"
+                                                    style="height: 48px; margin-right: 10px;"> Google Meet Grid View
+            </div>
+        </a>
+    </div>
+</nav>
+
+
 <div class="container">
     <div class="card">
         <div class="card-content">
             <div class="row valign-wrapper valign-only-above-medium">
                 <div class="col s12 m12">
-                    <div class="card-title" style="clear: both; margin: -1em 0 0 0"><h4>Thanks for using &nbsp;<span style="color:darkgreen"><img class="" src="assets/logo.png" width="22"> Google Meet
-                        Grid View</span>! 😎</h4></div>
-                </div>
-            </div>
-            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
-                <div class="col s12 m12 l6 xl2">
-                    <div class="valign-wrapper center">
-                        <img class="" src="assets/simone-marullo-256.jpg" style="width:100%">
-                    </div>
-                </div>
-                <div style="display: none" class="col s12 m12 l6 xl10 version1">
-                    <p>
-                        Hi there, this is Simone! Remember when this Chrome extension was needed to see all the
-                        participants in the grid? Our Google Meet calls were much more handy with this little
-                        extension... schools, companies and communities used it enthusiastically <span class="emoji">🤠</span>
-                    </p>
-                    <p>
-                        Things have changed a lot, Google improved Meet and we’ve had some issues along the way...
-                        <i>Spoiler alert</i>: I'm currently working on some improvements so stay tuned!
-                    </p>
-                </div>
-                <div style="display: none" class="col s12 m12 l6 xl10 version2">
-                    <p>
-                        Hi there, I’m Simone! Thanks to all the schools, companies, and communities that have used this
-                        Google Meet Chrome Extension over the past year. <span class="emoji">😊</span>
-                    </p>
-                    <p>
-                        Google keeps adding new features to Meet and I'm currently working on some improvements to make
-                        this
-                        extension even more useful! But today I want to tell you about another story that I bet you’ll
-                        find
-                        exciting.
-                    </p>
+                    <div class="card-title" style="clear: both; margin: -1em 0 0 0"><h4>Thanks for using Google Meet
+                        Grid View</h4></div>
                 </div>
             </div>
 
-            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
-                <div class="col s12 m12 l6 xl8">
-                    <div style="display: none" class="version1">
-                        <p>
-                            Today I want to tell you about another exciting story. How many times
-                            have you OBSESSIVELY <b>checked your mute status</b>? Or worse... you found the mute button
-                            <i><b>too
-                                late</b></i>? <span class="emoji">🙊😨</span>
-                            That’s why I am working on this amazing project with some friends at mütesync: a
-                            physical, light up mute button.. and starting today, this extension is fully compatible with
-                            it.
-                        </p>
-                        
-                    </div>
-                    
+            <div style="display: none" class="version3">
+                <div class="row valign-wrapper valign-only-above-medium">
+                    <div class="col s12 m12 l6 xl8">
+                        <div>
+                            <p>
+                                Hi I’m Simone. I built this Chrome Extension because I needed an easier way to see
+                                everyone on Google Meet in a grid. Now that Google added this feature I’m working on
+                                some improvements to make this extension even more useful. With this update I wanted to
+                                highlight what’s new:
+                            </p>
+                            <ol style="font-size: 125%">
+                                <li>I’m working on bug fixes and new features to make Grid View even more useful</li>
+                                <li>You can now use this extension along with the mütesync physical, light-up mute
+                                    button
+                                </li>
+                            </ol>
+                        </div>
+                        <a href="https://mutesync.com/kickstarter-gmgv?utm_source=easymute&utm_medium=extension&utm_campaign=release-notes&utm_content=version3"
+                           target="_blank"
+                           class="waves-effect waves-light btn-large call-to-action">Learn More <i
+                                class="material-icons right yellow-font">send</i></a>
 
-                    <div style="display: none" class="version2">
-                        <p>
-                            How many times have you OBSESSIVELY checked your mute status? Or worse... you found the mute
-                            button
-                            too late? That’s why I am working on this amazing project with some friends at mütesync.
-                        </p>
-                        <p>
-                            Discover mütesync: a physical, light up mute button that works with Meet, Zoom, Discord, and more.
-                            Starting today, this extension is fully compatible with the physical mute button. 
-                        </p>
+
                     </div>
-                    
-                    
-                </div>
-                <div class="col s12 m12 l6 xl4">
-                    <div class="valign-wrapper center">
-                        <img class="" src="assets/logo.png" width="100" height="100">
-                        <span style="font-size: 4.2rem; font-weight: bold; margin: 0 30px 0 10px;">+</span>
-                        <img class="" src="assets/mutesync-logo.png">
+                    <div class="col s12 m12 l6 xl4">
+                        <div class="valign-wrapper center">
+                            <img class="" src="assets/logo.png" width="100" height="100">
+                            <span style="font-size: 4.2rem; font-weight: bold; margin: 0 30px 0 10px;">+</span>
+                            <img class="" src="assets/mutesync-logo.png">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row" style="background: #d5d5ff;text-align: center;padding: 7px;">
-				<p style="display: none; margin-bottom: 10px;" class="version1">
-                            Make sure to get ready for the launch of the <b style='color:#06c;font-size:130%'>MOST
-                            BRILLIANT ADDON</b> for your Meet life (coming soon on Kickstarter)!
-                </p>
-                <p style="display: none; margin-bottom: 10px;" class="version2">
-					Check out their website and Kickstarter to see their new mute
-                    button launching soon! <span class="emoji">🤩</span>
-				</p>
-                    <a id="call-to-action" href="https://mutesync.com/kickstarter-gmgv" target="_blank"
+            <div style="display: none" class="version4">
+                <div class="row valign-wrapper valign-only-above-medium">
+                    <div class="col s12 m12 l6 xl2">
+                        <div class="valign-wrapper center">
+                            <img class="" src="assets/simone-marullo-256.jpg" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l6 xl10">
+                        <p>
+                            Hi there, I’m Simone! Thanks to all the schools, companies, and communities that have used
+                            this
+                            Google Meet Chrome Extension over the past year. <span class="emoji">😊</span>
+                        </p>
+                        <p>
+                            Google keeps adding new features to Meet and I'm currently working on some improvements to
+                            make
+                            this
+                            extension even more useful! But today I want to tell you about another story that I bet
+                            you’ll
+                            find
+                            exciting.
+                        </p>
+                    </div>
+                </div>
+                <div class="row valign-wrapper valign-only-above-medium">
+                    <div class="col s12 m12 l6 xl8">
+                        <div>
+                            <p>
+                                How many times have you OBSESSIVELY checked your mute status? Or worse... you found the
+                                mute
+                                button
+                                too late? That’s why I am working on this amazing project with some friends at mütesync.
+                            </p>
+                            <p>
+                                Discover mütesync: a physical, light up mute button that works with Meet, Zoom, Discord,
+                                and more.
+                                Starting today, this extension is fully compatible with the physical mute button.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="col s12 m12 l6 xl4">
+                        <div class="valign-wrapper center">
+                            <img class="" src="assets/logo.png" width="100" height="100">
+                            <span style="font-size: 4.2rem; font-weight: bold; margin: 0 30px 0 10px;">+</span>
+                            <img class="" src="assets/mutesync-logo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background: #d5d5ff;text-align: center;padding: 7px;">
+                    <p style="margin-bottom: 10px;">
+                        Check out their website and Kickstarter to see their new mute
+                        button launching soon! <span class="emoji">🤩</span>
+                    </p>
+                    <a href="https://mutesync.com/kickstarter-gmgv?utm_source=easymute&utm_medium=extension&utm_campaign=release-notes&utm_content=version4"
+                       target="_blank"
                        class="waves-effect waves-light btn-large call-to-action">Learn More <i
                             class="material-icons right yellow-font">send</i></a>
+                </div>
             </div>
-            <div class="row valign-wrapper valign-only-above-medium initially-hidden">
+
+            <div class="row valign-wrapper valign-only-above-medium">
                 <div class="col s12 m12 l6 xl6">
                     <br class="hide-on-med-and-down"/>
                     <img class="z-depth-2 has-radius" width="100%" src="assets/button_press.gif">
@@ -266,6 +301,7 @@
                     <img class="z-depth-2 has-radius" width="100%" src="assets/zoom_demo.gif">
                 </div>
             </div>
+
             <div class="row valign-wrapper valign-only-above-medium initially-hidden">
                 <div class="col s12 m12 l6 xl6 show-on-large hide-on-med-only">
                     <p style="margin: 0px; margin-top: 17px;"> 🎛️ stays in sync with Google Meet, Zoom, Discord and
@@ -305,12 +341,13 @@
     var applyFn = function (cls, f) {
         Array.from(document.getElementsByClassName(cls)).forEach(f);
     }
-    if ('version1' === adType) {
-        applyFn('version1', function (item) {
+    if ('version4' === adType) {
+        applyFn('version4', function (item) {
             item.style.display = "block";
         });
     } else {
-        applyFn('version2', function (item) {
+        applyFn('version3', function (item) {
+            console.log(item);
             item.style.display = "block";
         });
     }
@@ -318,9 +355,6 @@
     Array.from(document.getElementsByClassName("initially-hidden")).forEach(function (item) {
         item.style.display = "block";
     });
-
-    cta = document.getElementById("call-to-action");
-    cta.href = cta.href + '?type=' + adType;
 </script>
 </body>
 </html>
