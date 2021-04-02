@@ -215,6 +215,7 @@
                         </div>
                         <a href="https://mutesync.com/kickstarter-gmgv?utm_source=easymute&utm_medium=extension&utm_campaign=release-notes&utm_content=version3"
                            target="_blank"
+                           id="call-to-action1"
                            class="waves-effect waves-light btn-large call-to-action">Learn More <i
                                 class="material-icons right yellow-font">send</i></a>
 
@@ -286,6 +287,7 @@
                     </p>
                     <a href="https://mutesync.com/kickstarter-gmgv?utm_source=easymute&utm_medium=extension&utm_campaign=release-notes&utm_content=version4"
                        target="_blank"
+                       id="call-to-action2"
                        class="waves-effect waves-light btn-large call-to-action">Learn More <i
                             class="material-icons right yellow-font">send</i></a>
                 </div>
@@ -355,6 +357,22 @@
     Array.from(document.getElementsByClassName("initially-hidden")).forEach(function (item) {
         item.style.display = "block";
     });
+
+    cta1 = document.getElementById("call-to-action1");
+    cta2 = document.getElementById("call-to-action2");
+
+    gtag('set', {'method': adType});
+
+    cta1.addEventListener('click', function (event) {
+        gtag('event', 'select_content', {
+            content_type: adType,
+        });
+    })
+    cta2.addEventListener('click', function (event) {
+        gtag('event', 'select_content', {
+            content_type: adType,
+        });
+    })
 </script>
 </body>
 </html>
